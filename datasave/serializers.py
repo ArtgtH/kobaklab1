@@ -4,8 +4,10 @@ from rest_framework import serializers
 
 from .models import Data
 
+
 class DataSerializer(serializers.ModelSerializer):
-    """Класс-сериализатор для модели Data"""
+    """Класс-сериализатор для модели Data."""
+
     class Meta:
         model = Data
         fields = (
